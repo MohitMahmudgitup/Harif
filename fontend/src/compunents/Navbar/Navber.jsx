@@ -3,9 +3,11 @@ import { Link, NavLink } from 'react-router-dom'
 import "./Navber.css"
 import NavButton from '../NavButton/NavButton'
 import {motion} from "framer-motion"
+import Headroom from 'react-headroom'
 const Navber = () => {
 
   return (
+    <Headroom>
     <motion.nav 
     animate={{opacity: 1,y: 0}}
     initial={{opacity: 0,y: -100}}
@@ -31,6 +33,7 @@ const Navber = () => {
           <NavButton/>
         </div>
     </motion.nav>
+</Headroom>
   )
 }
 

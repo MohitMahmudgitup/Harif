@@ -6,10 +6,10 @@ import Advertis04 from "./Advertis/Advertis04.png"
 import Advertis05 from "./Advertis/Advertis05.png"
 import Advertis06 from "./Advertis/Advertis06.png"
 import Advertis07 from "./Advertis/Advertis07.png"
-
+import arrowicon from "./arrowicon.png"
 export const asset = {
     home01,
-
+    arrowicon
 }
 export const advertis = {
     Advertis01,

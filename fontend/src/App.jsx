@@ -10,6 +10,7 @@ import Shop from './page/Shop/Shop';
 import Navber from './compunents/Navbar/Navber';
 import Login from './page/Login/Login';
 import useLenis from './uitlity/useLenis';
+import Footer from './compunents/Footer/Footer';
 
 const App = () => {
   useLenis()
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+      <Footer />
     </main>
   );
 };

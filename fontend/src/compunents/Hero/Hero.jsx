@@ -1,10 +1,15 @@
 import React from 'react'
 import "./hero.css"
 import { asset } from '../../assets'
+import OngoingWrithing from './OngoingWrithing/OngoingWrithing'
 const Hero = () => {
   return (
     <header className='hero'>
+      
+      <div className='hero-bg01'></div>
+      <div className='hero-bg02'></div>
       <div className='hero-text-container '>
+        <div className='hero-ongoing-container'><OngoingWrithing/></div>
         <div className='hero-div01'></div>
         <div className='hero-div02'></div>
         <h1 className='font-mono'>Titel <span className='font-mono hero-font-only '>only</span></h1>

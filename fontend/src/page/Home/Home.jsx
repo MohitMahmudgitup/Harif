@@ -8,9 +8,8 @@ const Home = () => {
   return (
     <>
     <Hero/>
-    <Advertis/>
     <ShowCard/>
-    <Cart/>
+    <Advertis/>
     </>
   )
 }

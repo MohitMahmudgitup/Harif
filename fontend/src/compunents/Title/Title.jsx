@@ -11,9 +11,9 @@ const Title = ({title01, title02}) => {
                 <h3>{title02}</h3>
                 {/* pure potency */}
             </div>
-            <div className='title-font-box02'>
+            {/* <div className='title-font-box02'>
                 <img  src={asset.arrowicon} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
   )

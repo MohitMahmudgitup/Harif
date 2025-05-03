@@ -20,7 +20,7 @@ const Navber = () => {
   return (
     // <Headroom>
       <nav    
-      className="navbar ">
+      className="navbar  f2">
           <div className='navber-logo-container'>
               <Link to="/" className='navber-logo' >Logo</Link>
           </div>

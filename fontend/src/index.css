@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 /*    padding: 10px 60px; */
 /* #F59F00 */
 ::-webkit-scrollbar {
@@ -11,3 +13,10 @@
 .f1{
     font-family: "Cascadia Mono", sans-serif;
 }
+.f2 {
+    font-family: "Gidole", sans-serif;
+    font-weight: 400;
+}
+.f3 {
+    font-family: "Nunito Sans", sans-serif;
+  }

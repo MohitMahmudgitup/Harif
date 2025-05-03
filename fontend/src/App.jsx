@@ -12,6 +12,7 @@ import Login from './page/Login/Login';
 import useLenis from './uitlity/useLenis';
 import Footer from './compunents/Footer/Footer';
 import Welcome from './compunents/Welcome/Welcome';
+import ProductDetails from './page/ProductDetails/ProductDetails';
 
 const App = () => {
   useLenis()
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/product-details" element={<ProductDetails/>} />
       </Routes>
       <Footer />
     </main>

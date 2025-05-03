@@ -56,7 +56,7 @@ const Welcome = () => {
       },
       {
       opacity: 0,
-      y: -100,
+      y: -700,
       duration: .88, 
       delay: 7,    
       ease: "power3.in"
@@ -67,7 +67,7 @@ const Welcome = () => {
   return (
     <>
       {showWelcome && (
-        <div className={`welcome ${startSlide ? "slide" : ""}`}>
+        <div className={`welcome f2 ${startSlide ? "slide" : ""}`}>
           <div className="welcome-container">
             <h1 className=" welcome-container-font-h1">Animate Anything</h1>
             <h2 className=" welcome-container-font-h2">That's right, Anything</h2>

@@ -3,7 +3,7 @@ import './OngoingWrithing.css';
 
 const OngoingWrithing = () => {
   return (
-    <div className='ongoing-writhing-container'>
+    <div className='f2 ongoing-writhing-container'>
       <div className='scrolling-text'>
         <span>SHOW REEL©</span>
         <span>SHOW REEL©</span>

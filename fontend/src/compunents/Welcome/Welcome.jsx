@@ -7,20 +7,6 @@ const Welcome = () => {
   const [startSlide, setStartSlide] = useState(false);
   const [showWelcome, setShowWelcome] = useState(true);
 
-  // useEffect(() => {
-  //   const startTimer = setTimeout(() => {
-  //     setStartSlide(true); // start the animation
-  //   }, 4000); // wait 5 seconds before starting the slide
-
-  //   const endTimer = setTimeout(() => {
-  //     setShowWelcome(false); // remove from DOM after animation
-  //   }, 6000); // 5s wait + 1s animation
-
-  //   return () => {
-  //     clearTimeout(startTimer);
-  //     clearTimeout(endTimer);
-  //   };
-  // }, []);
 
   useEffect(()=>{
     gsap.from(".welcome-container-font-h1",{
@@ -85,7 +71,7 @@ const Welcome = () => {
           <div className="welcome-container">
             <h1 className=" welcome-container-font-h1">Animate Anything</h1>
             <h2 className=" welcome-container-font-h2">That's right, Anything</h2>
-            <div className="welcome-StarGradient2 absolute right-10 bottom-10 rotate-40"><icon.StarGradient2/></div>
+            <div className="welcome-StarGradient2 "><icon.StarGradient2/></div>
             <div className="welcome-StarGradient3 -z-10 absolute -left-5 top-5"><icon.StarGradient3/></div>
           </div>
         </div>

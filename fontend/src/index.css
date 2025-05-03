@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 @import "tailwindcss";
 /*    padding: 10px 60px; */
 /* #F59F00 */
 ::-webkit-scrollbar {
     display: none;
+}
+
+
+
+.f1{
+    font-family: "Cascadia Mono", sans-serif;
 }

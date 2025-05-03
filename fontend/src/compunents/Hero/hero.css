@@ -26,8 +26,8 @@
     position: absolute;
     border-radius: 20px;
     z-index: -1;
-    top: -40%;
-    left: -10%;
+    top: -30%;
+    left: 26%;
     transform: rotate(-10deg);
     display: inline-block; 
 }
@@ -101,5 +101,36 @@
     position: relative;
 }
 .hero-titel-container{
+
     position: relative;
 }
+.hero-line-2nd-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-StarGradient2{
+    position: absolute;
+  z-index: 20;
+  bottom: 10%;
+  right: 25%;
+  transform: rotate(10deg) translate(-50%, -50%);
+}
+
+
+
+.hero-StarGradient-03 {
+    position: absolute;
+    z-index: 20;
+    top: 20%;
+    left: 25%;
+    transform: rotate(15deg) translate(-50%, -50%);
+  }
+
+  .hero-StarGradient3 {
+    position: absolute;
+    z-index: 20;
+    top: 10%;
+    left: 10%;
+    transform: scale(1.85) translate(-50%, -50%);
+  }

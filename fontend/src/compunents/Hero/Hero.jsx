@@ -45,26 +45,26 @@ const Hero = () => {
       <div className='hero-bg02'></div>
       <div className='hero-text-container'>
         {/* <div className='hero-ongoing-container'><OngoingWrithing/></div> */}
-          <div className='StarGradient3 absolute scale-185 z-20 top-[10%] left-[10%] transform -translate-x-1/2 -translate-y-1/2'>
+          <div className='hero-StarGradient3 StarGradient3 absolute scale-185 z-20 top-[10%] left-[10%] transform -translate-x-1/2 -translate-y-1/2'>
             <icon.StarGradient3/>
           </div>
         <div className='hero-titel-container'>
-          <h1 className='font-mono'>Titel <span className='font-mono hero-font-only relative '><div className='hero-div01'></div>only</span> </h1>
+          <h1 className='f1'>Titel <span className='font-mono hero-font-only relative '><div className='hero-div01'></div>only</span> </h1>
         </div>
-        <div className='flex justify-between items-center'>
-        <h1 className='font-mono'>the brave high</h1>
+        <div className='hero-line-2nd-text'>
+        <h1 className='f1'>the brave high</h1>
         <OngoingWrithing/>
         </div>
         <div className='hero-longText'>
+        <p className='f1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquam iusto laborum facere sint voluptate. Ullam alias repellat, doloribus earum architecto ipsum voluptates maiores voluptas.</p>
         <div className='hero-div02'></div>
-        <p className='font-mono '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, aliquam iusto laborum facere sint voluptate. Ullam alias repellat, doloribus earum architecto ipsum voluptates maiores voluptas.</p>
         </div>
       </div>
       <div className='hero-img-container'>
       <div className='hero-bg01'></div>
-      <div className="StarGradient2 absolute z-20 bottom-[10%] rotate-10 right-[25%] transform -translate-x-1/2 -translate-y-1/2"> <icon.StarGradient2/></div>
+      <div className="hero-StarGradient2 StarGradient2 "> <icon.StarGradient2/></div>
           <img className='hero-img' src={asset.home01} alt="" />
-      <div className="StarGradient2 absolute z-20 top-[35%] rotate-10 left-[35%] transform -translate-x-1/2 -translate-y-1/2"> <icon.StarGradient2/></div>
+      {/* <div className="hero-StarGradient-03 StarGradient2 "> <icon.StarGradient2/></div> */}
       </div>
     </header>
   )

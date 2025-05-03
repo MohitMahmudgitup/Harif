@@ -1,21 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./Navber.css"
 import NavButton from '../NavButton/NavButton'
 import {motion} from "framer-motion"
-import Headroom from 'react-headroom'
+import gsap from 'gsap'
+// import Headroom from 'react-headroom'
 const Navber = () => {
+  useEffect(() => {
+    gsap.from(".navbar",{
+      opacity: 0, 
+      y: -100 , 
+      duration: 1, 
+      delay: 5, 
+      ease: "power4.out"
+    });
+    
+  })
 
   return (
-    <Headroom>
-      <motion.nav 
-      animate={{opacity: 1,y: 0}}
-      initial={{opacity: 0,y: -100}}
-      transition={{
-      duration: 1,
-      delay: 1
-    }}
-      
+    // <Headroom>
+      <nav    
       className="navbar ">
           <div className='navber-logo-container'>
               <Link to="/" className='navber-logo' >Logo</Link>
@@ -32,8 +36,8 @@ const Navber = () => {
           <div className='navber-login-container'>
             <NavButton/>
           </div>
-      </motion.nav>
-    </Headroom>
+      </nav>
+ 
   )
 }
 

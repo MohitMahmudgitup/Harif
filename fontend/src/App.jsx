@@ -11,12 +11,14 @@ import Navber from './compunents/Navbar/Navber';
 import Login from './page/Login/Login';
 import useLenis from './uitlity/useLenis';
 import Footer from './compunents/Footer/Footer';
+import Welcome from './compunents/Welcome/Welcome';
 
 const App = () => {
   useLenis()
 
   return (
-    <main >
+    <main  >
+      <Welcome/>
       <Navber />
       <Routes>
         <Route path="/" element={<Home />} />

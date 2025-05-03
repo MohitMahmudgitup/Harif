@@ -10,7 +10,7 @@
 .cart:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 20px 0px rgba(78, 78, 78, 0.5);
-    background: linear-gradient(149deg,rgba(115, 38, 0, 1) 21%, rgba(110, 110, 33, 1) 67%, rgba(56, 102, 74, 1) 100%);
+    background: linear-gradient(149deg,rgb(65, 22, 0) 21%, rgb(59, 59, 15) 67%, rgb(0, 56, 22) 100%);
 }
 
 .cart-img-container{
@@ -46,6 +46,7 @@
 .cart-info-container h1{
     font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 800;
 }
 .cart-info-container p {
     font-size: 14px;

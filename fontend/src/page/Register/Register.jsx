@@ -1,5 +1,5 @@
 import React from 'react';
-import './Register.css';
+import "./register.css"
 import Title from '../../compunents/Title/Title';
 import { Link } from 'react-router-dom';
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Welcome.css";
+import "./welcome.css";
 import gsap from 'gsap'
 import { icon } from '../../assets/index.jsx'
 

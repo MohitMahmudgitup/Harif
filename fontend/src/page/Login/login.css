@@ -1,0 +1,23 @@
+.Login-help-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.Login-Link-Create{
+    font-size: 14px;
+    font-weight: 600;
+}
+.Login-Link-Forgot:hover{
+    text-decoration: underline;
+}
+.Login-Link-Forgot{
+    font-size: 14px;
+    color: yellow;
+}
+.Login-help-forgot-container{
+    display: flex;
+}
+.Login-help-forgot-container p{
+    font-size: 14px; 
+}

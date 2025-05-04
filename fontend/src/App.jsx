@@ -13,6 +13,7 @@ import useLenis from './uitlity/useLenis';
 import Footer from './compunents/Footer/Footer';
 import Welcome from './compunents/Welcome/Welcome';
 import ProductDetails from './page/ProductDetails/ProductDetails';
+import { ForgotPassword } from './page/ForgotPassword/ForgotPassword';
 
 const App = () => {
   useLenis()
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/product-details" element={<ProductDetails/>} />
       </Routes>
       <Footer />

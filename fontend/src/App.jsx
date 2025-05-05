@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <main  >
-      <Welcome/>
+      {/* <Welcome/> */}
       <Navber />
       <Routes>
         <Route path="/" element={<Home />} />

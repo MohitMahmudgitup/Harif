@@ -1,8 +1,6 @@
 .showCard{
     padding: 20px 60px;
     position: relative;
-    /* height: 200vh; */
-    /* background: #ffbebe; */
 }
 .showCard .bg-01{
     position: absolute;
@@ -53,4 +51,37 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
 }
+
+
+@media (max-width: 1337px) {
+    .showCard-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center; 
+    }
+}
+@media ( max-width: 1019px) {
+    .showCard-container {
+        grid-template-columns: 1fr 1fr;
+        place-items: center; 
+    }
+    
+}
+@media ( max-width: 600px) {
+    .showCard{
+        /* background: #969696; */
+        padding: 20px 10px;
+        position: relative;
+    }
+    .showCard-container {
+        grid-template-columns: 1fr;
+        place-items: center; 
+    }
+    .bg-01,
+    .bg-02,
+    .bg-03,
+    .bg-04{
+        display: none;
+    }
+}
+  
 

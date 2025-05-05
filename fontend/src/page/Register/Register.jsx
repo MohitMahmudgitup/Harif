@@ -1,14 +1,11 @@
 import React from 'react';
-<<<<<<< HEAD
-import "./register.css"
-=======
 import './register.css';
->>>>>>> 96bb181afe5812dbf9a1b66b0765d5eb85cfe70c
 import Title from '../../compunents/Title/Title';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
+  
     <div className="register-container">
             <div className='contact-bg1'></div>
       <div className='contact-bg2'></div>
@@ -21,8 +18,7 @@ const Register = () => {
       <div className='contact-bg9'></div>
       <div className='contact-bg10'></div>
       <Title  title02={"Create an Account"}/>
-      <h1 className="register-title"></h1>
-      <form className="register-form">
+      <form className="register-form f3">
         <input type="text" placeholder="Full Name" className="register-input" />
         <input type="email" placeholder="Email" className="register-input" />
         <input type="password" placeholder="Password" className="register-input" />
@@ -30,7 +26,7 @@ const Register = () => {
         <button type="submit" className="register-button">Register</button>
       </form>
         <div className='register-help-container'>
-          <Link className='register-Link-Create' to="/login">Sign Up</Link>
+          <Link className='register-Link-Create f3' to="/login">Sign Up</Link>
         </div>
     </div>
   );

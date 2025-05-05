@@ -13,14 +13,14 @@ const About = () => {
       </p>
 
       <section className="about-section">
-      <Title title01={""} title02={"Our Mission"}/>
+      <Title title02={"Our Mission"}/>
         <p className='f1'>
           To deliver high-quality solutions that help people and businesses thrive in a digital world.
         </p>
       </section>
 
       <section className="about-section">
-      <Title title01={""} title02={"What We Offer"}/>
+      <Title  title02={"What We Offer"}/>
         <ul className="about-list f1">
           <li>Professional services tailored to your needs</li>
           <li>24/7 customer support</li>
@@ -30,7 +30,7 @@ const About = () => {
       </section>
 
       <section className="about-section">
-      <Title title01={""} title02={"Get in Touch"}/>
+      <Title title02={"Get in Touch"}/>
         <p className='f1'>
           Have questions or feedback? Feel free to <Link className='about-contect' to="/contact">contact us</Link> any time.
         </p>

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./Navber.css"
 import NavButton from '../NavButton/NavButton'
-import {motion} from "framer-motion"
 import gsap from 'gsap'
 // import Headroom from 'react-headroom'
 const Navber = () => {

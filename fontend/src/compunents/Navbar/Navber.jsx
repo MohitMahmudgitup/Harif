@@ -22,6 +22,14 @@ const Navber = () => {
         ease: "power4.out"
       });
     });
+    mm.add("(max-width: 720px)", () => {
+      gsap.from(".mbl-nav",{
+        opacity: 1, 
+        x: -500 , 
+        duration: 1, 
+        ease: "power4.out"
+      });
+    });
   
     return () => mm.revert(); 
   })

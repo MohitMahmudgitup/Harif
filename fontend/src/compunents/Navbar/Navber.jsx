@@ -26,10 +26,11 @@ const Navber = () => {
       gsap.from(".mbl-nav",{
         opacity: 1, 
         x: -500 , 
-        duration: 1, 
+        duration: .44, 
         ease: "power4.out"
       });
     });
+    
   
     return () => mm.revert(); 
   })

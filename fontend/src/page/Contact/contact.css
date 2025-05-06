@@ -164,7 +164,18 @@
     
 }
 @media ( max-width: 700px) {
-    
+  .contact-bg1,
+  .contact-bg2,
+  .contact-bg3,
+  .contact-bg4,
+  .contact-bg5,
+  .contact-bg6,
+  .contact-bg7,
+  .contact-bg8,
+  .contact-bg9,
+  .contact-bg10{
+    display: none;
+  }
 }
 @media ( max-width: 500px) {
     

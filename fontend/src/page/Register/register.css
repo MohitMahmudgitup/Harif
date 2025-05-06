@@ -1,73 +1,156 @@
 .register-container {
-    padding: 2rem;
-    position: absolute;
-    top: 0;
-    z-index: 100000;
-    background: #000;
-    width: 100vw;
-    height: 120vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .register-title {
-    text-align: center;
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-  }
-  
-  .register-form {
-    display: flex;
-    width: 30vw;
-    flex-direction: column;
-  }
-  
-  .register-input {
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1rem;
-  }
-  
-  .register-button {
-    padding: 0.9rem;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .register-button:hover {
-    background-color: #2d2d2e;
-    color: #f7f7f7;
-  }
-  
-.register-help-container{
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-.register-Link-Create{
-    font-size: 14px;
-    text-decoration: underline;
+  width: 100%;
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 20px 60;
+  border-radius: 12px;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: #fff;
 }
 
-@media ( max-width: 900px) {
-    
+.register-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
-@media ( max-width: 700px) {
-    
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0px 20px;
 }
-@media ( max-width: 500px) {
-    
+
+.register-input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #2e2e2e;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.register-input::placeholder {
+  color: #ccc;
+}
+
+.register-button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #e6c200;
+}
+
+.register-help-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0;
+  
+}
+
+.register-help-forgot-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.register-help-forgot-container p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.register-Link-Forgot {
+  font-size: 14px;
+  color: yellow;
+  text-decoration: none;
+}
+
+.register-Link-Forgot:hover {
+  text-decoration: underline;
+}
+
+.register-Link-Create {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-Link-Create:hover {
+  text-decoration: underline;
+}
+
+/* Background animation elements */
+.contact-bg1,
+.contact-bg2,
+.contact-bg3,
+.contact-bg4,
+.contact-bg5,
+.contact-bg6,
+.contact-bg7,
+.contact-bg8,
+.contact-bg9,
+.contact-bg10 {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  background: yellow;
+  filter: blur(80px);
+}
+
+/* Example positions – adjust as needed */
+.contact-bg1 { top: -50px; left: -50px; width: 200px; height: 200px; }
+.contact-bg2 { bottom: -60px; right: -40px; width: 180px; height: 180px; }
+/* Add the rest similarly... */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .register-container {
+    padding: 1.5rem;
+    margin: 60px auto;
+    max-width: 370px;
+  }
+
+  .register-title {
+    font-size: 1.8rem;
+  }
+
+  .register-input {
+    font-size: 15px;
+  }
+
+  .register-button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-container {
+      margin: 130px 19px;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+
+
+
+  .register-Link-Create {
+    margin-top: 10px;
+  }
 }

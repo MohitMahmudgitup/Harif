@@ -66,3 +66,11 @@
   }
   
   
+  @media (max-width: 600px) {
+    .welcome-container{
+      /* background: #977b7b; */
+      width: 100%;
+      margin-left: 37px;
+    }
+
+  }

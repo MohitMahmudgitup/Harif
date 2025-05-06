@@ -57,7 +57,103 @@
     text-decoration: none;
     font-size: 18px;
 }
-  
+.mbl-nav{
+    display: none;
+}
+.FiAlignRight{
+    display: none;
+
+}
+
+
+
+@media (max-width: 900px) {
+    .navber-link-container,
+    .navber-login-container {
+        display: none;
+    }
+    .navbar{
+        margin: auto;
+        position: sticky;
+        background: #f59f00;
+        padding: 10px 20px;
+        width: 90vw;
+        top: 20px;
+        border-radius: 20px;
+        
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        /* From https://css.glass */
+        background: #f59f0034;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.233);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid #f59f0052;
+    }
+
+    .mbl-nav{
+        display: block;
+        z-index: 10000;
+        width: 100%;
+        /* height: 400px; */
+        top: 70px;
+        left: 0px;
+        border-radius: 20px;
+        position: absolute;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    background: black;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.233);
+        backdrop-filter: blur(200px);
+        -webkit-backdrop-filter: blur(200px);
+        border: 1px solid #f59f0052;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+    }
+    .FiAlignRight{
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+    .navber-mbl-link{
+        font-size: 30px;
+        padding: 0px 20px;
+        border-radius: 10px;
+
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        /* From https://css.glass */
+        background: #f59f0034;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.233);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid #f59f0052;
+    }
+    .navber-mbl-link-active{
+        background: #f59f00ab;
+    }
+}
+@media ( max-width: 700px) {
+    
+}
+@media ( max-width: 500px) {
+    
+}
   
   
 

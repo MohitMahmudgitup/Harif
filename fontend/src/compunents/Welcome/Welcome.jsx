@@ -55,8 +55,8 @@ const Welcome = () => {
         
       },
       {
-      opacity: 0,
-      y: -700,
+      opacity: 1,
+      y: -1000,
       duration: .88, 
       delay: 7,    
       ease: "power3.in"

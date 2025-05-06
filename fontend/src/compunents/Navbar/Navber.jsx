@@ -1,20 +1,38 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import "./Navber.css"
 import NavButton from '../NavButton/NavButton'
-import {motion} from "framer-motion"
 import gsap from 'gsap'
+import { FiAlignRight } from "react-icons/fi";
 // import Headroom from 'react-headroom'
+import { FiX } from "react-icons/fi";
 const Navber = () => {
+  const [showMoblieSize , setShowMoblieSize] = useState(false);
   useEffect(() => {
-    gsap.from(".navbar",{
-      opacity: 0, 
-      y: -100 , 
-      duration: 1, 
-      delay: 5, 
-      ease: "power4.out"
+
+
+    let mm = gsap.matchMedia();
+
+    mm.add("(min-width: 720px)", () => {
+      gsap.from(".navbar",{
+        opacity: 0, 
+        y: -100 , 
+        duration: 1, 
+        delay: 5, 
+        ease: "power4.out"
+      });
+    });
+    mm.add("(max-width: 720px)", () => {
+      gsap.from(".mbl-nav",{
+        opacity: 1, 
+        x: -500 , 
+        duration: .44, 
+        ease: "power4.out"
+      });
     });
     
+  
+    return () => mm.revert(); 
   })
 
   return (
@@ -36,6 +54,35 @@ const Navber = () => {
           <div className='navber-login-container'>
             <NavButton/>
           </div>
+
+            {
+              showMoblieSize ? (       <FiX onClick={()=>setShowMoblieSize(false)} className='FiAlignRight'/> ):( 
+                <FiAlignRight onClick={()=>setShowMoblieSize(true)} className='FiAlignRight'/>)
+            }
+
+   
+            {
+              showMoblieSize && ( 
+              <div className='mbl-nav'>
+                <div className = "mbl-ul">
+                  
+                {
+              ["shop", "gallery", "about", "contact"].map((item, index) => {
+                return (
+                  <NavLink  key = {index}  onClick={()=>setShowMoblieSize(false)}  className = {({ isActive }) => isActive ? `navber-mbl-link navber-mbl-link-active` : `navber-mbl-link`} to={`/${item}`}>{item}</NavLink>
+                )
+              })
+            }
+                </div>
+                <div onClick={()=>setShowMoblieSize(false)}  className='mbl-login-container'>
+                  <NavButton/>
+                </div>
+              </div>
+              
+               )
+           }
+
+
       </nav>
  
   )

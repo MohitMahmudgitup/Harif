@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import "./register.css"
-=======
 import './register.css';
->>>>>>> 96bb181afe5812dbf9a1b66b0765d5eb85cfe70c
 import Title from '../../compunents/Title/Title';
 import { Link } from 'react-router-dom';
 

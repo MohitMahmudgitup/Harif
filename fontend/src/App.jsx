@@ -14,13 +14,15 @@ import Footer from './compunents/Footer/Footer';
 import Welcome from './compunents/Welcome/Welcome';
 import ProductDetails from './page/ProductDetails/ProductDetails';
 import { ForgotPassword } from './page/ForgotPassword/ForgotPassword';
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
   useLenis()
 
   return (
     <main  >
-      {/* <Welcome/> */}
+      <ToastContainer/>
+      <Welcome/> 
       <Navber />
       <Routes>
         <Route path="/" element={<Home />} />

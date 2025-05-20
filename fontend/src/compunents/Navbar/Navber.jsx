@@ -26,7 +26,7 @@ const Navber = () => {
       gsap.from(".mbl-nav",{
         opacity: 1, 
         x: -500 , 
-        duration: .44, 
+        duration: .22, 
         ease: "power4.out"
       });
     });

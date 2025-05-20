@@ -3,6 +3,7 @@ import cors from "cors"
 import "dotenv/config";
 import  conectBD  from './config/db.js';
 import userRouter from './routes/user_router.js';
+import productRouter from './routes/product_router.js';
 
 
 
@@ -20,6 +21,7 @@ app.use('/uploads', express.static('uploads'));
 
 //Routers
 app.use("/api/user", userRouter);
+app.use("/api", productRouter);
 
 
 conectBD()

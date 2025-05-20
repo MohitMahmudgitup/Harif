@@ -1,57 +1,29 @@
-const mongoose = require('mongoose');
+import Product from '../model/product_model.js';
 
-const productSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: [true, 'Product name is required'],
-        trim: true
-    },
-    description: {
-        type: String,
-        required: [true, 'Product description is required']
-    },
-    price: {
-        type: Number,
-        required: [true, 'Product price is required'],
-        min: [0, 'Price cannot be negative']
-    },
-    category: {
-        type: String,
-        required: [true, 'Product category is required']
-    },
-    stock: {
-        type: Number,
-        required: [true, 'Product stock is required'],
-        min: [0, 'Stock cannot be negative'],
-        default: 0
-    },
-    images: [{
-        type: String,
-        required: [true, 'Product image is required']
-    }],
-    ratings: {
-        type: Number,
-        default: 0,
-        min: 0,
-        max: 5
-    },
-    numReviews: {
-        type: Number,
-        default: 0
-    },
-    isActive: {
-        type: Boolean,
-        default: true
+export const uploadingProduct = async (req, res) =>{
+    const { productName, description, price, category } = req.body
+    const image = req.file ? req.file.filename : null;
+
+    if( !productName || !description || !price || !category){
+       return res.status(400).json({ 
+                success: false,
+                message: "Please fill in all required fields" 
+            });
     }
-}, {
-    timestamps: true
-});
 
-// Create indexes for better query performance
-productSchema.index({ name: 'text', description: 'text' });
-productSchema.index({ category: 1 });
-productSchema.index({ price: 1 });
+    if( !image){
+       return res.status(400).json({ 
+                success: false,
+                message: "All almost 1 product picture" 
+            });
+    }
+    
+    const products = new Product({ productName, description, price, category, image })
+    const savedProduct = await products.save();
 
-const Product = mongoose.model('Product', productSchema);
-
-module.exports = Product;
+      res.status(201).json({
+            success: true,
+            message: "User registered successfully",
+            data: savedProduct,
+        });
+}

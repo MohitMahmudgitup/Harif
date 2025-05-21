@@ -18,10 +18,7 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Product category is required']
     },
-    images: [{
-        type: String,
-        required: [true, 'Product image is required']
-    }],
+    image:{type: Array, required: true},
 }, {
     timestamps: true
 });

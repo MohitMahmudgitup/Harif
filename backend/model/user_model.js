@@ -52,10 +52,6 @@ const userSchema = new mongoose.Schema({
     timestamps: true
 });
 
-// Create indexes for better query performance
-userSchema.index({ email: 1 });
-userSchema.index({ username: 1 });
-userSchema.index({ status: 1 });
 
 const userModel = mongoose.models.user || mongoose.model("user", userSchema);
 export default userModel;

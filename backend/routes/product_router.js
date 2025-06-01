@@ -4,7 +4,7 @@ import { productUpload } from '../config/productUpload.js';
 
 const router = express.Router();
 
-router.post('/product', productUpload, uploadingProduct)
+router.post('/product/:subCategory', productUpload, uploadingProduct)
 router.get('/getproduct', getProduct)
 router.put('/product/:id',productUpload, editProduct);
 router.delete('/product/:id',deleteProduct);

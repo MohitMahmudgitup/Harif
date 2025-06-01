@@ -1,4 +1,5 @@
 import Product from '../model/product_model.js';
+import subCetagoryModel from '../model/subCategory_model.js';
 
 
 export const getProduct = async (req, res)=>{
@@ -17,26 +18,24 @@ export const getProduct = async (req, res)=>{
     }
 }
 
-export const uploadingProduct = async (req, res) =>{
-    const { productName, description, price, category } = req.body
+export const uploadingProduct =  (req, res) =>{
+    const { subCategory } = req.params; 
+    const { productName, description, price } = req.body;
     const image = req.files ? req.files.map(file => file.filename) : [];
-    if( !productName || !description || !price || !category){
+    if( !productName || !description || !price ){
        return res.status(400).json({ 
                 success: false,
                 message: "Please fill in all required fields" 
             });
     }
-
-
     
-    const products = new Product({ productName, description, price, category, image : [image] })
-    const savedProduct = await products.save();
+    const products = new Product({ productName, description, price, subCategory , image : [image] })
+    products.save();
 
-      res.status(201).json({
-            success: true,
+    res.status(201).json({
             message: "Product uploaded successfully",
-            data: savedProduct,
-        });
+            products
+    });
 }
 
 export const editProduct = async (req, res)=>{

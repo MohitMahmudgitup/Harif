@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose, { mongo } from 'mongoose';
 
 const productSchema = new mongoose.Schema({
     productName: {
@@ -14,11 +14,13 @@ const productSchema = new mongoose.Schema({
         required: [true, 'Product price is required'],
         min: [0, 'Price cannot be negative']
     },
-    category: {
-        type: String,
-        required: [true, 'Product category is required']
+    subCategory: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref : "subCategory",
+        required: true
     },
     image:{type: Array, required: true},
+
 }, {
     timestamps: true
 });

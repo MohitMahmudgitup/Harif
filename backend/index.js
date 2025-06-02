@@ -1,4 +1,5 @@
 import express from 'express'
+import fs from 'fs/promises';
 import cors from "cors"
 import "dotenv/config";
 import  conectBD  from './config/db.js';
@@ -26,6 +27,16 @@ app.use("/api/user", userRouter);
 app.use("/api", productRouter);
 app.use("/api", subCetagoryRouter)
 app.use("/api", cetagoryRouter)
+
+// upload and productUploads image files 
+fs.readdir("uploads") 
+  .then((files) => console.log( "Upload files : " + files.length) ) 
+  .catch((err) => console.error(err));
+  
+fs.readdir("productUploads") 
+  .then((files) => console.log( "productUploads files : " + files.length) ) 
+  .catch((err) => console.error(err)); 
+
 
 conectBD()
 app.listen(PORT, () => {
